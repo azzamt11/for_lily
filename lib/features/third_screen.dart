@@ -70,7 +70,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                         ).ref();
                         final path = 'messages'; 
                         final messageData = {
-                          'text': 'Moving to ThirdScreen',
+                          'text': 'Moving to FourthScreen',
                           'timestamp': DateTime.now().millisecondsSinceEpoch,
                           'senderId': 'app',
                         };
