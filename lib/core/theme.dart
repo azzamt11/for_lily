@@ -50,8 +50,8 @@ ThemeData buildTheme() {
       color: Color(0xFF6062AC)
     ),
     bodyMedium: GoogleFonts.pacifico(
-      fontSize: 15,
-      fontWeight: FontWeight.w600,
+      fontSize: 14,
+      fontWeight: FontWeight.w200,
       letterSpacing: 0.2,
       color: Color(0xFF6062AC)
     ),

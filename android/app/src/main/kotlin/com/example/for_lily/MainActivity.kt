@@ -1,4 +1,4 @@
-package com.example.for_lily
+package com.azzamee.forlily
 
 import io.flutter.embedding.android.FlutterActivity
 

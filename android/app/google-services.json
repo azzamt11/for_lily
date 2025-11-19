@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "638416343468",
+    "firebase_url": "https://for-lily-project-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "for-lily-project",
+    "storage_bucket": "for-lily-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638416343468:android:c00adef6186fa43bdf2a09",
+        "android_client_info": {
+          "package_name": "com.azzamee.forlily"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDidctR4nTEC5fMbzray0trgoV5vTRYM-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
