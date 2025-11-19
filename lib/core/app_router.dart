@@ -1,6 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:for_lily/features/loading_screen.dart';
 import 'package:for_lily/features/first_screen.dart';
+import 'package:for_lily/features/second_screen.dart';
+import 'package:for_lily/features/third_screen.dart';
+import 'package:for_lily/features/fourth_screen.dart';
 
 part 'app_router.gr.dart';
 
@@ -16,12 +19,22 @@ class AppRouter extends RootStackRouter {
 
       AutoRoute(
         page: FirstRoute.page,
-        path: '/login',
+        path: '/first',
       ),
 
-      //AutoRoute(
-        //page: MainRoute.page,
-        //path: '/main',
-      //),
+      AutoRoute(
+        page: SecondRoute.page,
+        path: '/second',
+      ),
+
+      AutoRoute(
+        page: ThirdRoute.page,
+        path: '/third',
+      ),
+
+      AutoRoute(
+        page: FourthRoute.page,
+        path: '/fourth',
+      ),
   ];
 }

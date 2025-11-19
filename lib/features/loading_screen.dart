@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:for_lily/core/app_router.dart';
 import 'package:lottie/lottie.dart';
 
 
@@ -23,7 +24,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   Future<void> _doLoading() async {
     await Future.delayed(const Duration(seconds: 10));
-    
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.router.push(FirstRoute());
+    });
   }
 
   @override
@@ -53,7 +56,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
                   ),
                   Text(
                     "Loading", 
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Color(0xFF6062AC))
+                    style: Theme.of(context).textTheme.titleMedium
                   )
                 ],
               )

@@ -8,14 +8,14 @@ import 'package:lottie/lottie.dart';
 
 
 @RoutePage()
-class FirstScreen extends StatefulWidget {
-  const FirstScreen({super.key});
+class ThirdScreen extends StatefulWidget {
+  const ThirdScreen({super.key});
 
   @override
-  State<FirstScreen> createState() => _FirstScreenState();
+  State<ThirdScreen> createState() => _ThirdScreenState();
 }
 
-class _FirstScreenState extends State<FirstScreen> {
+class _ThirdScreenState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -32,44 +32,23 @@ class _FirstScreenState extends State<FirstScreen> {
             child: Stack(
               children: [
                 Align(
-                  alignment: Alignment.topRight,
+                  alignment: Alignment.topCenter,
                   child: Lottie.asset(
-                    "assets/happy_bird.json",
-                    height: width * 0.6,
-                    width: width * 0.6,
-                    fit: BoxFit.contain,
+                    "assets/cat_in_a_rocket.json",
+                    height: width * 0.7,
+                    width: width * 0.7,
+                    fit: BoxFit.contain
                   )
                 ),
                 Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding: EdgeInsets.fromLTRB(20, height * 0.15, 20, 0),
                     child: Text(
-                      "Lily, aku tau kamu sedang patah hati 🥺. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu 💝.",
-                      style: textTheme.titleMedium,
+                      "Aku tau patah hati memang sakit, dan mungkin aku nggak akan bisa ngerti rasa sakit yang kamu alami 🥺. Akupun waktu patah hati membutuhkan waktu yang cukup lama untuk pulih. Tapi kamu nggak boleh lupa, Lily, orang-orang yang mencintaimu akan selalu menantikan senyuman manismu 🥰.",
+                      style: textTheme.titleSmall,
                       textAlign: TextAlign.center,
                       maxLines: 10,
                     )
-                  )
-                ),
-                Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
-                    child: Lottie.asset(
-                      "assets/goldfish.json",
-                      height: width * 0.4,
-                      width: width * 0.4,
-                      fit: BoxFit.contain
-                    )
-                  )
-                ),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Lottie.asset(
-                    "assets/no_activity_cat.json",
-                    height: width * 0.65,
-                    width: width * 0.65,
-                    fit: BoxFit.contain
                   )
                 ),
                 Align(
@@ -78,7 +57,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     padding: const EdgeInsets.only(bottom: 20),
                     child: ElevatedButton(
                       onPressed: () {
-                        context.router.push(SecondRoute());
+                        context.router.push(FourthRoute());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.teal,
@@ -95,7 +74,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         "Next",
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: Colors.white)
                       )
-                    )
+                    ),
                   )
                 )
               ],

@@ -22,32 +22,44 @@ ThemeData buildTheme() {
       fontSize: 25.5,
       fontWeight: FontWeight.w800,
       letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
     ),
     titleLarge: GoogleFonts.pacifico(
       fontSize: 19,
       fontWeight: FontWeight.w600,
       letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
     ),
     titleMedium: GoogleFonts.pacifico(
-      fontSize: 17.5,
-      fontWeight: FontWeight.w600,
+      fontSize: 19,
+      fontWeight: FontWeight.w400,
       letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
+    ),
+    titleSmall: GoogleFonts.pacifico(
+      fontSize: 18,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
     ),
     bodyLarge: GoogleFonts.pacifico(
-      fontSize: 15.5,
-      fontWeight: FontWeight.w700,
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
       letterSpacing: 0,
       height: 1.1,
+      color: Color(0xFF6062AC)
     ),
     bodyMedium: GoogleFonts.pacifico(
       fontSize: 15,
       fontWeight: FontWeight.w600,
       letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
     ),
     bodySmall: GoogleFonts.pacifico(
       fontSize: 14,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.2,
+      color: Color(0xFF6062AC)
     ),
   );
 

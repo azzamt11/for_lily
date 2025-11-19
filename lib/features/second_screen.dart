@@ -8,14 +8,14 @@ import 'package:lottie/lottie.dart';
 
 
 @RoutePage()
-class FirstScreen extends StatefulWidget {
-  const FirstScreen({super.key});
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({super.key});
 
   @override
-  State<FirstScreen> createState() => _FirstScreenState();
+  State<SecondScreen> createState() => _SecondScreenState();
 }
 
-class _FirstScreenState extends State<FirstScreen> {
+class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -31,44 +31,23 @@ class _FirstScreenState extends State<FirstScreen> {
             color: Colors.white,
             child: Stack(
               children: [
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Lottie.asset(
-                    "assets/happy_bird.json",
-                    height: width * 0.6,
-                    width: width * 0.6,
-                    fit: BoxFit.contain,
-                  )
-                ),
                 Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.4),
                     child: Text(
-                      "Lily, aku tau kamu sedang patah hati 🥺. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu 💝.",
-                      style: textTheme.titleMedium,
+                      "Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily 🥰. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu 🥹.",
+                      style: textTheme.titleSmall,
                       textAlign: TextAlign.center,
                       maxLines: 10,
                     )
                   )
                 ),
                 Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
-                    child: Lottie.asset(
-                      "assets/goldfish.json",
-                      height: width * 0.4,
-                      width: width * 0.4,
-                      fit: BoxFit.contain
-                    )
-                  )
-                ),
-                Align(
-                  alignment: Alignment.bottomRight,
+                  alignment: Alignment.bottomCenter,
                   child: Lottie.asset(
-                    "assets/no_activity_cat.json",
-                    height: width * 0.65,
-                    width: width * 0.65,
+                    "assets/lovely_cats.json",
+                    height: width * 1.2,
+                    width: width * 1.2,
                     fit: BoxFit.contain
                   )
                 ),
@@ -78,7 +57,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     padding: const EdgeInsets.only(bottom: 20),
                     child: ElevatedButton(
                       onPressed: () {
-                        context.router.push(SecondRoute());
+                        context.router.push(ThirdRoute());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.teal,
@@ -95,7 +74,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         "Next",
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: Colors.white)
                       )
-                    )
+                    ),
                   )
                 )
               ],
