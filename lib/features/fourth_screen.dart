@@ -168,7 +168,7 @@ class _FourthScreenState extends State<FourthScreen> {
                                               ),
                                               const SizedBox(height: 10),
                                               Text(
-                                                "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa mengerjakan banyak hal. Termasuk ini... hehe",
+                                                "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa melakukan banyak hal. Termasuk ini... hehe",
                                                 textAlign: TextAlign.center,
                                                 style: textTheme.bodyMedium,
                                                 maxLines: 5,
