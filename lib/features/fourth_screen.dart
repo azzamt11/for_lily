@@ -116,67 +116,64 @@ class _FourthScreenState extends State<FourthScreen> {
                                       children: [
                                         Container(
                                           width: min(constraints.maxWidth * 0.8, 280),
-                                          height: constraints.maxHeight * 0.8,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.circular(17),
                                           ),
                                           padding: const EdgeInsets.fromLTRB(15, 40, 15, 15),
-                                          child: SingleChildScrollView(
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.center,
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Text(
-                                                  "Lily, in case that you need this information, aplikasi web ini aku buat dengan menggunakan Flutter dan juga Firebase realtime database. Kodingannya bisa kamu lihat di sini",
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Text(
+                                                "Lily, in case that you need this information, aplikasi web ini aku buat dengan menggunakan Flutter dan juga Firebase realtime database. Kodingannya bisa kamu lihat di sini",
+                                                textAlign: TextAlign.center,
+                                                style: textTheme.bodyMedium,
+                                                maxLines: 5,
+                                              ),
+                                              const SizedBox(height: 10),
+                                              TextButton(
+                                                onPressed: () async {
+                                                  final Uri url = Uri.parse("https://github.com/azzamt11/for_lily");
+                                                  if (await canLaunchUrl(url)) {
+                                                    await launchUrl(url);
+                                                  }
+                                                },
+                                                child: Text(
+                                                  "github.com/azzamt11/for_lily",
+                                                  style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
                                                   textAlign: TextAlign.center,
-                                                  style: textTheme.bodyMedium,
-                                                  maxLines: 5,
                                                 ),
-                                                const SizedBox(height: 10),
-                                                TextButton(
-                                                  onPressed: () async {
-                                                    final Uri url = Uri.parse("https://github.com/azzamt11/for_lily");
-                                                    if (await canLaunchUrl(url)) {
-                                                      await launchUrl(url);
-                                                    }
-                                                  },
-                                                  child: Text(
-                                                    "github.com/azzamt11/for_lily",
-                                                    style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
-                                                    textAlign: TextAlign.center,
-                                                  ),
-                                                ),
-                                                const SizedBox(height: 10),
-                                                Text(
-                                                  "Untuk hasil build web nya bisa kamu lihat di sini",
+                                              ),
+                                              const SizedBox(height: 10),
+                                              Text(
+                                                "Untuk hasil build web nya bisa kamu lihat di sini",
+                                                textAlign: TextAlign.center,
+                                                style: textTheme.bodyMedium,
+                                                maxLines: 5,
+                                              ),
+                                              const SizedBox(height: 10),
+                                              TextButton(
+                                                onPressed: () async {
+                                                  final Uri url = Uri.parse("https://github.com/azzamt11/for_lily_web");
+                                                  if (await canLaunchUrl(url)) {
+                                                    await launchUrl(url);
+                                                  }
+                                                },
+                                                child: Text(
+                                                  "github.com/azzamt11/for_lily_web",
+                                                  style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
                                                   textAlign: TextAlign.center,
-                                                  style: textTheme.bodyMedium,
-                                                  maxLines: 5,
                                                 ),
-                                                const SizedBox(height: 10),
-                                                TextButton(
-                                                  onPressed: () async {
-                                                    final Uri url = Uri.parse("https://github.com/azzamt11/for_lily_web");
-                                                    if (await canLaunchUrl(url)) {
-                                                      await launchUrl(url);
-                                                    }
-                                                  },
-                                                  child: Text(
-                                                    "github.com/azzamt11/for_lily_web",
-                                                    style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
-                                                    textAlign: TextAlign.center,
-                                                  ),
-                                                ),
-                                                const SizedBox(height: 10),
-                                                Text(
-                                                  "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa mengerjakan banyak hal. Termasuk ini... hehe",
-                                                  textAlign: TextAlign.center,
-                                                  style: textTheme.bodyMedium,
-                                                  maxLines: 5,
-                                                ),
-                                              ],
-                                            ),
+                                              ),
+                                              const SizedBox(height: 10),
+                                              Text(
+                                                "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa mengerjakan banyak hal. Termasuk ini... hehe",
+                                                textAlign: TextAlign.center,
+                                                style: textTheme.bodyMedium,
+                                                maxLines: 5,
+                                              ),
+                                            ],
                                           ),
                                         ),
                                         Align(
