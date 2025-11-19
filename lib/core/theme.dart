@@ -49,15 +49,16 @@ ThemeData buildTheme() {
       height: 1.1,
       color: Color(0xFF6062AC)
     ),
-    bodyMedium: GoogleFonts.pacifico(
+    bodyMedium: GoogleFonts.nunito(
       fontSize: 14,
-      fontWeight: FontWeight.w200,
+      fontWeight: FontWeight.w300,
       letterSpacing: 0.2,
-      color: Color(0xFF6062AC)
+      color: Color(0xFF6062AC),
+      height: 1,
     ),
     bodySmall: GoogleFonts.pacifico(
       fontSize: 14,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w300,
       letterSpacing: 0.2,
       color: Color(0xFF6062AC)
     ),

@@ -74,19 +74,17 @@ class _FourthScreenState extends State<FourthScreen> {
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: Text(
-                      " - Penggemar Rahasiamu \nyang ingin kamu selalu bahagia"
+                      " - Penggemar Rahasiamu \nyang ingin kamu selalu bahagia",
+                      style: textTheme.bodySmall,
                     ),
                   )
                 ),
                 Align(
-                  alignment: Alignment.bottomCenter,
+                  alignment: Alignment.topRight,
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
+                    padding: const EdgeInsets.only(top: 10, right: 10),
                     child: ElevatedButton(
                       onPressed: () async {
-                        setState(() {
-                          loading = true;
-                        });
                         final databaseRef = FirebaseDatabase.instanceFor(
                           databaseURL: "https://for-lily-project-default-rtdb.asia-southeast1.firebasedatabase.app/",
                           app: Firebase.app()
@@ -101,91 +99,123 @@ class _FourthScreenState extends State<FourthScreen> {
                           debugPrint('Failed to connect: $error');
                         });
                         if(!context.mounted) return;
-                        await showDialog(
-                          context: context, 
-                          builder: (context) {
-                            return Container(
-                              width: min(constraints.maxWidth * 0.7, 200),
-                              decoration: BoxDecoration(
-                                border: Border.all(color:  Color(0xFF6062AC), width: 1),
-                                borderRadius: BorderRadius.circular(17),
-                                color: Colors.white,
-                              ),
-                              padding: const EdgeInsets.all(15),
-                              child: Column(
-                                spacing: 10,
-                                children: [
-                                  Text(
-                                    "Lily, in case that you need this information, Aplikasi web ini aku buat dengan menggunakan Flutter dan juga Firebase realtime database. Kodingannya bisa lihat di sini",
-                                    textAlign: TextAlign.center,
-                                    style: textTheme.bodyMedium,
-                                    maxLines: 5,
-                                  ),
-                                  TextButton(
-                                    onPressed: () async {
-                                      final Uri url = Uri.parse("https://github.com/azzamt11/for_lily");
-                                      if (await canLaunchUrl(url)) {
-                                        await launchUrl(url);
-                                      }
-                                    }, 
-                                    child: Text(
-                                      "https://github.com/azzamt11/for_lily"
-                                    )
-                                  ),
-                                  Text(
-                                    "Untuk hasil build web nya bisa kamu lihat di sini",
-                                    textAlign: TextAlign.center,
-                                    style: textTheme.bodyMedium,
-                                    maxLines: 5,
-                                  ),
-                                  TextButton(
-                                    onPressed: () async {
-                                      final Uri url = Uri.parse("https://github.com/azzamt11/for_lily_web");
-                                      if (await canLaunchUrl(url)) {
-                                        await launchUrl(url);
-                                      }
-                                    }, 
-                                    child: Text(
-                                      "https://github.com/azzamt11/for_lily_web"
-                                    )
-                                  ),
-                                  Text(
-                                    "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa mengerjakan banyak hal. Termasuk ini... hehe",
-                                    textAlign: TextAlign.center,
-                                    style: textTheme.bodyMedium,
-                                    maxLines: 5,
-                                  ),
-                                ],
-                              )
-                            );
-                          }
-                        );
+                          await showDialog(
+                            context: context,
+                            barrierDismissible: true,
+                            builder: (context) {
+                              return LayoutBuilder(
+                                builder: (context, constraints) {
+                                  return Dialog(
+                                    insetPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 24.0),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(17),
+                                      side: const BorderSide(color: Color(0xFF6062AC), width: 1),
+                                    ),
+                                    
+                                    child: Stack(
+                                      children: [
+                                        Container(
+                                          width: min(constraints.maxWidth * 0.8, 280),
+                                          height: constraints.maxHeight * 0.8,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(17),
+                                          ),
+                                          padding: const EdgeInsets.fromLTRB(15, 40, 15, 15),
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: [
+                                                Text(
+                                                  "Lily, in case that you need this information, aplikasi web ini aku buat dengan menggunakan Flutter dan juga Firebase realtime database. Kodingannya bisa kamu lihat di sini",
+                                                  textAlign: TextAlign.center,
+                                                  style: textTheme.bodyMedium,
+                                                  maxLines: 5,
+                                                ),
+                                                const SizedBox(height: 10),
+                                                TextButton(
+                                                  onPressed: () async {
+                                                    final Uri url = Uri.parse("https://github.com/azzamt11/for_lily");
+                                                    if (await canLaunchUrl(url)) {
+                                                      await launchUrl(url);
+                                                    }
+                                                  },
+                                                  child: Text(
+                                                    "github.com/azzamt11/for_lily",
+                                                    style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 10),
+                                                Text(
+                                                  "Untuk hasil build web nya bisa kamu lihat di sini",
+                                                  textAlign: TextAlign.center,
+                                                  style: textTheme.bodyMedium,
+                                                  maxLines: 5,
+                                                ),
+                                                const SizedBox(height: 10),
+                                                TextButton(
+                                                  onPressed: () async {
+                                                    final Uri url = Uri.parse("https://github.com/azzamt11/for_lily_web");
+                                                    if (await canLaunchUrl(url)) {
+                                                      await launchUrl(url);
+                                                    }
+                                                  },
+                                                  child: Text(
+                                                    "github.com/azzamt11/for_lily_web",
+                                                    style: textTheme.bodyMedium?.copyWith(color: Colors.teal),
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 10),
+                                                Text(
+                                                  "Eh.. Lily, punya pasangan anak IT ada banyak keuntungannya lho. Soalnya anak IT bisa mengerjakan banyak hal. Termasuk ini... hehe",
+                                                  textAlign: TextAlign.center,
+                                                  style: textTheme.bodyMedium,
+                                                  maxLines: 5,
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: Alignment.topRight,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(5.0),
+                                            child: IconButton(
+                                              padding: const EdgeInsets.all(10),
+                                              icon: const Icon(Icons.close, color: Color(0xFF6062AC), weight: 10, size: 15),
+                                              onPressed: () {
+                                                context.router.pop();
+                                              },
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                          );
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 7),
+                        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 3),
                         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(17),
                         ),
                         side: const BorderSide(
-                          width: 1, 
+                          width: 0.5, 
                           color: Color(0xFF6062AC), // border color
                         ),
                         elevation: 5,
                         shadowColor: Colors.black.withOpacity(0.3),
                         overlayColor: Colors.white,
                       ),
-                      child: loading 
-                      ? SizedBox(
-                        height: 20,
-                        width: 20,
-                        child: CircularProgressIndicator(
-                          color: Color(0xFF6062AC),
-                          backgroundColor: Colors.transparent,
-                        )
-                      ) 
-                      : Text(
+                      child: Text(
                         "More",
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Color(0xFF6062AC))
                       )
