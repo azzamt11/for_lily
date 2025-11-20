@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:for_lily/features/autdio_player_screen.dart';
 import 'package:for_lily/features/loading_screen.dart';
 import 'package:for_lily/features/first_screen.dart';
 import 'package:for_lily/features/second_screen.dart';

@@ -4,6 +4,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:for_lily/core/app_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -49,11 +50,50 @@ class _FourthScreenState extends State<FourthScreen> {
                 Center(
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.1),
-                    child: Text(
-                      "Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu 💝. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia 🫰.",
-                      style: textTheme.titleMedium,
-                      textAlign: TextAlign.center,
-                      maxLines: 10,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      spacing: 10,
+                      children: [
+                        Text(
+                          "Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu 💝. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia 🫰.",
+                          style: textTheme.titleMedium,
+                          textAlign: TextAlign.center,
+                          maxLines: 10,
+                        ),
+                        Text(
+                          "Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya 💝.",
+                          style: textTheme.titleMedium,
+                          textAlign: TextAlign.center,
+                          maxLines: 10,
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            context.router.push(AudioPlayerRoute());
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 3),
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(17),
+                            ),
+                            side: const BorderSide(
+                              width: 0.5, 
+                              color: Color(0xFF6062AC), // border color
+                            ),
+                            elevation: 5,
+                            shadowColor: Colors.black.withOpacity(0.3),
+                            overlayColor: Colors.white,
+                          ),
+                          child: Row(
+                            spacing: 5,
+                            children: [
+                              Icon(Icons.play_arrow, size: 20, color: Color(0xFF6062AC)),
+                              Text("Play", style: textTheme.bodyMedium?.copyWith(color: Color(0xFF6062AC)))
+                            ],
+                          )
+                        )
+                      ],
                     )
                   )
                 ),
@@ -214,7 +254,7 @@ class _FourthScreenState extends State<FourthScreen> {
                       ),
                       child: Text(
                         "More",
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Color(0xFF6062AC))
+                        style: textTheme.bodyMedium?.copyWith(color: Color(0xFF6062AC))
                       )
                     )
                   )

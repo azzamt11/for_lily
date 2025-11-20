@@ -11,6 +11,22 @@
 part of 'app_router.dart';
 
 /// generated route for
+/// [AudioPlayerScreen]
+class AudioPlayerRoute extends PageRouteInfo<void> {
+  const AudioPlayerRoute({List<PageRouteInfo>? children})
+    : super(AudioPlayerRoute.name, initialChildren: children);
+
+  static const String name = 'AudioPlayerRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AudioPlayerScreen();
+    },
+  );
+}
+
+/// generated route for
 /// [FirstScreen]
 class FirstRoute extends PageRouteInfo<void> {
   const FirstRoute({List<PageRouteInfo>? children})
