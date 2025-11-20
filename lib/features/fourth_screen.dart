@@ -51,6 +51,7 @@ class _FourthScreenState extends State<FourthScreen> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.15),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       spacing: 10,
                       children: [
@@ -100,6 +101,7 @@ class _FourthScreenState extends State<FourthScreen> {
                             overlayColor: Colors.white,
                           ),
                           child: Row(
+                            mainAxisSize: MainAxisSize.min,
                             spacing: 5,
                             children: [
                               Icon(Icons.play_arrow, size: 20, color: Color(0xFF6062AC)),
