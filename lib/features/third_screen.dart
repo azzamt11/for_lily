@@ -77,6 +77,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
                         await databaseRef.child(path).push().set(messageData).catchError((error) {
                           debugPrint('Failed to connect: $error');
                         });
+                        setState(() {
+                          loading = false;
+                        });
                         if(!context.mounted) return;
                         context.router.push(FourthRoute());
                       },

@@ -98,6 +98,9 @@ class _FirstScreenState extends State<FirstScreen> {
                         await databaseRef.child(path).push().set(messageData).catchError((error) {
                           debugPrint('Failed to connect: $error');
                         });
+                        setState(() {
+                          loading = false;
+                        });
                         if(!context.mounted) return;
                         context.router.push(SecondRoute());
                       },

@@ -136,7 +136,7 @@ class _FourthScreenState extends State<FourthScreen> {
                                                 onPressed: () async {
                                                   final Uri url = Uri.parse("https://github.com/azzamt11/for_lily");
                                                   if (await canLaunchUrl(url)) {
-                                                    await launchUrl(url);
+                                                    await launchUrl(url, mode: LaunchMode.externalApplication);
                                                   }
                                                 },
                                                 child: Text(
@@ -157,7 +157,7 @@ class _FourthScreenState extends State<FourthScreen> {
                                                 onPressed: () async {
                                                   final Uri url = Uri.parse("https://github.com/azzamt11/for_lily_web");
                                                   if (await canLaunchUrl(url)) {
-                                                    await launchUrl(url);
+                                                    await launchUrl(url, mode: LaunchMode.externalApplication);
                                                   }
                                                 },
                                                 child: Text(
