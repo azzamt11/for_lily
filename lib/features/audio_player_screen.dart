@@ -24,7 +24,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
   void initState() {
     super.initState();
 
-    _player.play(AssetSource('audio/song.mp3'));
+    _player.play(AssetSource('assets/Gyubin__Really_Like_You.mp3'));
     _isPlaying = true;
 
     // Listen for duration and position updates
