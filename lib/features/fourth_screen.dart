@@ -49,7 +49,7 @@ class _FourthScreenState extends State<FourthScreen> {
                 ),
                 Center(
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.1),
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       spacing: 10,

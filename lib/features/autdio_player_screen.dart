@@ -66,6 +66,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
       builder: (context, constraints) {
         final double width = min(constraints.maxWidth, 300);
         final double height = constraints.maxHeight;
+        final TextTheme textTheme = Theme.of(context).textTheme;
         return Material(
           color: Colors.white,
           child: Container(
@@ -101,7 +102,12 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                     ],
                   )
                 ),
-                SizedBox(height: 20),
+                Text(
+                  "Gyubin - Really Like You 🫰",
+                  style: textTheme.titleMedium,
+                  textAlign: TextAlign.center,
+                  maxLines: 10,
+                ),
                 Slider(
                   min: 0,
                   max: _duration.inSeconds.toDouble(),
