@@ -40,7 +40,7 @@ class AppRouter extends RootStackRouter {
 
       AutoRoute(
         page: AudioPlayerRoute.page,
-        path: '/fourth',
+        path: '/audio_player',
       ),
   ];
 }
