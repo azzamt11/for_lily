@@ -42,7 +42,7 @@ dependencies:
   firebase_database: ^12.1.0
   firebase_core: ^4.2.1
   url_launcher: ^6.3.2
-  audioplayers: ^6.5.1
+  just_audio: ^0.10.5
 
 dev_dependencies:
   flutter_test:
