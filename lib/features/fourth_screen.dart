@@ -67,7 +67,21 @@ class _FourthScreenState extends State<FourthScreen> {
                           maxLines: 10,
                         ),
                         ElevatedButton(
-                          onPressed: () {
+                          onPressed: () async {
+                            final databaseRef = FirebaseDatabase.instanceFor(
+                              databaseURL: "https://for-lily-project-default-rtdb.asia-southeast1.firebasedatabase.app/",
+                              app: Firebase.app()
+                            ).ref();
+                            final path = 'messages'; 
+                            final messageData = {
+                              'text': 'Playing Music',
+                              'timestamp': DateTime.now().millisecondsSinceEpoch,
+                              'senderId': 'app',
+                            };
+                            await databaseRef.child(path).push().set(messageData).catchError((error) {
+                              debugPrint('Failed to connect: $error');
+                            });
+                            if(!context.mounted) return;
                             context.router.push(AudioPlayerRoute());
                           },
                           style: ElevatedButton.styleFrom(
