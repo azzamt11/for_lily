@@ -49,7 +49,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
     if (_isPlaying) {
       await _player.pause();
     } else {
-      await _player.play(AssetSource('audio/Gyubin__Really_Like_You.mp3'));
+      await _player.play(AssetSource('assets/Gyubin__Really_Like_You.mp3'));
     }
     setState(() => _isPlaying = !_isPlaying);
   }
