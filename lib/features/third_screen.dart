@@ -48,7 +48,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, height * 0.15, 20, 0),
                     child: Text(
-                      "Aku tau patah hati memang sakit, dan mungkin aku nggak akan bisa ngerti rasa sakit yang kamu alami 🥺. Akupun waktu patah hati membutuhkan waktu yang cukup lama untuk pulih. Tapi kamu nggak boleh lupa, Lily, orang-orang yang mencintaimu akan selalu menantikan senyuman manismu 🥰.",
+                      "Aku tau patah hati memang sakit, dan mungkin aku nggak akan bisa ngerti rasa sakit yang kamu alami 🥺. Akupun waktu patah hati membutuhkan waktu yang cukup lama untuk pulih. Tapi kamu nggak boleh lupa, Lily, orang-orang yang mencintaimu akan selalu menantikan senyuman manismu 🌸.",
                       style: textTheme.titleSmall,
                       textAlign: TextAlign.center,
                       maxLines: 10,

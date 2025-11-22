@@ -56,13 +56,13 @@ class _FourthScreenState extends State<FourthScreen> {
                       spacing: 10,
                       children: [
                         Text(
-                          "Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu 💝. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia 🫰.",
+                          "Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu 🎁. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia 🌍.",
                           style: textTheme.titleMedium,
                           textAlign: TextAlign.center,
                           maxLines: 10,
                         ),
                         Text(
-                          "Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya 💝.",
+                          "Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya 🎧.",
                           style: textTheme.titleMedium,
                           textAlign: TextAlign.center,
                           maxLines: 10,

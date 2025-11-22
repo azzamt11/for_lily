@@ -48,7 +48,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
-                      "Lily, aku tau kamu sedang patah hati 🥺. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu 💝.",
+                      "Lily, aku tau kamu sedang patah hati 🥺. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu 💌.",
                       style: textTheme.titleMedium,
                       textAlign: TextAlign.center,
                       maxLines: 10,
