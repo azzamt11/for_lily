@@ -231,7 +231,7 @@ class _FourthScreenState extends State<FourthScreen> {
                                               ),
                                               const SizedBox(height: 40),
                                               Text(
-                                                "- Your Secret Admirer \n 21 November 2025",
+                                                "- Your Secret Admirer \n 20 November 2025",
                                                 textAlign: TextAlign.center,
                                                 style: textTheme.bodyMedium,
                                                 maxLines: 5,
