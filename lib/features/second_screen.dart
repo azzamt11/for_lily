@@ -39,7 +39,7 @@ class _SecondScreenState extends State<SecondScreen> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.4),
                     child: Text(
-                      "Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily 🌈. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu 😊.",
+                      "Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily 🍁. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu 😊.",
                       style: textTheme.titleSmall,
                       textAlign: TextAlign.center,
                       maxLines: 10,

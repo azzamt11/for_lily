@@ -65057,7 +65057,7 @@ V(a){return A.qf(new A.abG(this))}}
 A.abG.prototype={
 $2(a,b){var s,r,q,p,o,n=null,m=Math.min(b.b,300),l=A.ak(a),k=m*0.6
 k=A.k_("assets/happy_bird.json",B.aI,k,k)
-l=A.un(new A.cF(B.B2,A.dI("Lily, aku tau kamu sedang patah hati \ud83e\udd7a. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu \ud83d\udc9d.",10,l.ok.w,B.ae),n),n,n)
+l=A.un(new A.cF(B.B2,A.dI("Lily, aku tau kamu sedang patah hati \ud83e\udd7a. Tetapi, sama seperti si dia yang sebelumnya selalu menghiasi hari-harimu, kamu juga selalu menghiasi hari-hari seseorang yang menyukaimu. Contohnya, aku, penggemar rahasiamu \ud83d\udc8c.",10,l.ok.w,B.ae),n),n,n)
 s=m*0.4
 s=A.k_("assets/goldfish.json",B.aI,s,s)
 r=m*0.65
@@ -65106,8 +65106,8 @@ A.ac2.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k=null,j=4284506796,i=Math.min(b.b,300),h=b.d,g=A.ak(a).ok,f=i*0.5
 f=A.k_("assets/hot_smiling_coffe.json",B.aI,f,f)
 s=g.w
-r=A.dI("Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu \ud83d\udc9d. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia \ud83e\udef0.",10,s,B.ae)
-s=A.dI("Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya \ud83d\udc9d.",10,s,B.ae)
+r=A.dI("Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu \ud83c\udf81. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia \ud83c\udf0d.",10,s,B.ae)
+s=A.dI("Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya \ud83c\udfa7.",10,s,B.ae)
 q=A.kY(17)
 p=B.d.R(76.5)
 q=A.Eu(k,k,B.h,k,k,k,5,k,k,k,k,k,B.h,B.kF,A.ad(p,B.k.u()>>>16&255,B.k.u()>>>8&255,B.k.u()&255),new A.cG(q,B.v),B.jl,k,B.cb,k,k)
@@ -65236,7 +65236,7 @@ ar(){return new A.OC()}}
 A.OC.prototype={
 V(a){return A.qf(new A.aeF(this))}}
 A.aeF.prototype={
-$2(a,b){var s,r,q,p=null,o=Math.min(b.b,300),n=b.d,m=A.un(new A.cF(new A.aP(20,0,20,n*0.4),A.dI("Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily \ud83e\udd70. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu \ud83e\udd79.",10,A.ak(a).ok.x,B.ae),p),p,p),l=o*1.2
+$2(a,b){var s,r,q,p=null,o=Math.min(b.b,300),n=b.d,m=A.un(new A.cF(new A.aP(20,0,20,n*0.4),A.dI("Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily \ud83c\udf08. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu \ud83d\ude0a.",10,A.ak(a).ok.x,B.ae),p),p,p),l=o*1.2
 l=A.k_("assets/lovely_cats.json",B.aI,l,l)
 s=this.a
 r=A.kY(17)
@@ -65281,7 +65281,7 @@ V(a){return A.qf(new A.afo(this))}}
 A.afo.prototype={
 $2(a,b){var s,r,q,p=null,o=Math.min(b.b,300),n=b.d,m=A.ak(a),l=o*0.7
 l=A.k_("assets/cat_in_a_rocket.json",B.aI,l,l)
-m=A.un(new A.cF(new A.aP(20,n*0.15,20,0),A.dI("Aku tau patah hati memang sakit, dan mungkin aku nggak akan bisa ngerti rasa sakit yang kamu alami \ud83e\udd7a. Akupun waktu patah hati membutuhkan waktu yang cukup lama untuk pulih. Tapi kamu nggak boleh lupa, Lily, orang-orang yang mencintaimu akan selalu menantikan senyuman manismu \ud83e\udd70.",10,m.ok.x,B.ae),p),p,p)
+m=A.un(new A.cF(new A.aP(20,n*0.15,20,0),A.dI("Aku tau patah hati memang sakit, dan mungkin aku nggak akan bisa ngerti rasa sakit yang kamu alami \ud83e\udd7a. Akupun waktu patah hati membutuhkan waktu yang cukup lama untuk pulih. Tapi kamu nggak boleh lupa, Lily, orang-orang yang mencintaimu akan selalu menantikan senyuman manismu \ud83c\udf38.",10,m.ok.x,B.ae),p),p,p)
 s=this.a
 r=A.kY(17)
 r=A.Eu(p,p,B.bF,p,p,p,5,p,p,p,p,p,B.h,B.h_,A.ad(B.d.R(76.5),B.k.u()>>>16&255,B.k.u()>>>8&255,B.k.u()&255),new A.cG(r,B.v),p,p,B.cb,p,p)
