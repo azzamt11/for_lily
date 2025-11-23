@@ -65236,7 +65236,7 @@ ar(){return new A.OC()}}
 A.OC.prototype={
 V(a){return A.qf(new A.aeF(this))}}
 A.aeF.prototype={
-$2(a,b){var s,r,q,p=null,o=Math.min(b.b,300),n=b.d,m=A.un(new A.cF(new A.aP(20,0,20,n*0.4),A.dI("Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily \ud83c\udf08. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu \ud83d\ude0a.",10,A.ak(a).ok.x,B.ae),p),p,p),l=o*1.2
+$2(a,b){var s,r,q,p=null,o=Math.min(b.b,300),n=b.d,m=A.un(new A.cF(new A.aP(20,0,20,n*0.4),A.dI("Curhatanmu di Tumblr, Story Instagrammu yang lagi ngidam croissant 7.a.m, foto tercantikmu di Ranu Kumbolo, semuanya selalu menghiasi hari-hariku, Lily \ud83c\udf41. Jadi please... cerialah lagi seperti sebelumnya. Cerialah demi orang-orang yang mencintaimu, keluargamu, sahabat-sahabatmu, teman-temanmu, dan juga penggemarmu \ud83d\ude0a.",10,A.ak(a).ok.x,B.ae),p),p,p),l=o*1.2
 l=A.k_("assets/lovely_cats.json",B.aI,l,l)
 s=this.a
 r=A.kY(17)

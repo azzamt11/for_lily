@@ -37,10 +37,11 @@ ThemeData buildTheme() {
       color: Color(0xFF6062AC)
     ),
     titleSmall: GoogleFonts.pacifico(
-      fontSize: 18,
+      fontSize: 17,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.2,
-      color: Color(0xFF6062AC)
+      color: Color(0xFF6062AC),
+      height: 1.4
     ),
     bodyLarge: GoogleFonts.pacifico(
       fontSize: 16,

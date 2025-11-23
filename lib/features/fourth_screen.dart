@@ -47,6 +47,18 @@ class _FourthScreenState extends State<FourthScreen> {
                     ),
                   )
                 ),
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: Lottie.asset(
+                      "assets/kitty_cat_error_404.json",
+                      height: width * 0.7,
+                      width: width * 0.7,
+                      fit: BoxFit.contain
+                    )
+                  )
+                ),
                 Center(
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, height * 0.15),
@@ -57,13 +69,13 @@ class _FourthScreenState extends State<FourthScreen> {
                       children: [
                         Text(
                           "Lily, meskipun sederhana, aku berharap surat digital ini bisa menghiburmu 🎁. Jangan pernah lupa Lily, kamu berhak mendapatkan seluruh kebahagiaan Dunia 🌍.",
-                          style: textTheme.titleMedium,
+                          style: textTheme.titleSmall,
                           textAlign: TextAlign.center,
                           maxLines: 10,
                         ),
                         Text(
                           "Eh... Lily, aku punya lagu untuk kamu dengerin. Pakai headsetmu dan klik play di bawah ini ya 🎧.",
-                          style: textTheme.titleMedium,
+                          style: textTheme.titleSmall,
                           textAlign: TextAlign.center,
                           maxLines: 10,
                         ),
@@ -110,18 +122,6 @@ class _FourthScreenState extends State<FourthScreen> {
                           )
                         )
                       ],
-                    )
-                  )
-                ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
-                    child: Lottie.asset(
-                      "assets/kitty_cat_error_404.json",
-                      height: width * 0.7,
-                      width: width * 0.7,
-                      fit: BoxFit.contain
                     )
                   )
                 ),
